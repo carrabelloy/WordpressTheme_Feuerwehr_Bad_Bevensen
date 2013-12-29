@@ -1,0 +1,282 @@
+/*
+Theme Name: Feuerwehr-Bad-Bevensen
+Theme URI: www.feuerwehr-bad-bevensen.de
+Description: New desgin for the hompage of "Feuerwehr-Bad-Bevensen.de"
+Author: Justus Schmidt
+Author URI: www.feuerwehr-bad-bevensen.de
+*/
+@import url(css/960.css);
+@import url(css/reset.css);
+@import url(css/bootstrap.css);
+
+
+body        {color: #333; background: #2b304a; width: 100%;	background-position: initial initial; background-repeat: initial initial;}
+ 
+#wrapper    {margin: auto; text-align: left; background: #292e48;}
+#header     {background: #000;}
+#slider     {background: #520b0b;}
+#main       {background: #292e48;}
+#content	{float: left; padding: 30px 0px 0px 0px;}
+#sidebar    {float: left; padding: 30px 0px;}
+#footer     {background: #520b0b; height: 40px;}
+
+/*
+//////////////// header //////////////
+*/
+#header .fullheader_menu_bar{
+	display: block;
+	background-image: url(graphic_elements/header/top_header_01.png);
+	height: 30px;
+}
+
+#header .community_flag{
+	width: 143px;
+	height: 178px;
+	background: transparent;
+	text-align: center;
+	position: absolute;
+	z-index: 1;
+}
+
+#header .community_flag_main{	
+	background-image: url(graphic_elements/header/flag_01.png);
+	width: 140px;
+	height: 160px;	
+	float: left;
+}
+
+#header .community_flag_manchette{
+	background-image: url(graphic_elements/header/flag_03.png);
+	width: 143px;
+	height: 18px;
+	float: left;
+}
+
+#header .community_flag_shadow{
+	background-image: url(graphic_elements/header/flag_02.png);
+	background-repeat: repeat-y;
+	width: 3px;
+	height: 160px;
+	float: left;
+}
+
+#header .clipart {
+	background-image: url(graphic_elements/clipart/clipart_02.png);
+	position: absolute;
+	background-position: 50% 100%;
+}
+
+#header .header_shine{
+	background-image: url(graphic_elements/shine/shine_01.png);
+}
+
+#header .search_area{
+	background-image: url(graphic_elements/search/search_05.png);
+	height: 26px;
+	width: 216px;
+	padding: 2px 2px;
+	text-align: center;
+}
+
+#header .search_area input {
+	border: 0;
+	background: transparent;
+	font-size: 14px;
+}
+
+#header .search_area input[type="text"] {
+	height: 26px;
+	float: left;
+	width: 175px;
+	color: #bfbfbf;
+	padding: 0px 5px;
+	margin-top: 0px;
+	margin-bottom: 2px;
+}
+
+#header .search_area input[type="submit"] {
+	height: 30px;
+	float: left;
+	width: 30px;
+}
+
+#header .header_seperator{
+	background-image: url(graphic_elements/divisors/divisor_002.png);
+	height: 10px;
+	bottom: -5px;
+}
+
+/* ############### slider ########### */
+#slider .slider_gradiant{
+	background-image: url(graphic_elements/shadow/gradiant_001.png);
+	height: 100%;
+	background-repeat: repeat no-repeat;
+	background-size: 100% 100%;
+}
+
+#slider .slider_seperator{
+	background-image: url(graphic_elements/divisors/divisor_004.png);
+	height: 5px;
+	bottom: -3px;
+}
+
+/* ############### main ########### */
+#main .main_gradiant{
+	background-image: url(graphic_elements/shadow/gradiant_001.png);
+	height: 100%;
+	background-repeat: repeat no-repeat;
+	background-size: 100% 100%;
+}
+
+#main .main_seperator{
+	background-image: url(graphic_elements/divisors/divisor_004.png);
+	height: 5px;
+	bottom: -3px;
+}
+
+/* ############### slider ########### */
+#footer .footer_gradiant{
+	background-image: url(graphic_elements/shadow/gradiant_001.png);
+	height: 100%;
+	background-repeat: repeat no-repeat;
+	background-size: 100% 100%;
+}
+
+.show_element {
+	display: inline-block!important;
+}
+
+.bar_seperator {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 6;
+}
+
+.lay_base, .clipart {
+	/*this is used to have a fixed background layer*/
+	position:absolute;
+	width: 100%;
+	height:100%;
+	left: 0;
+	top: 0;
+}
+
+.clipart {
+	background-repeat: no-repeat;
+	z-index: 0;
+}
+
+/*######### box layout ######## */
+#boxdesign_001 {}
+
+#boxdesign_001 .container_box_pieces{
+	background-color: #cdcdcd;
+}
+
+#boxdesign_001 .box_token{
+	background-image: url(graphic_elements/box/box_001_token.png);
+	position: absolute;
+	width: 40px;
+	height: 64px;
+	top: -5px;
+	right: -5px;
+}
+
+#boxdesign_001 .box_top_left, #boxdesign_001 .box_top_right, #boxdesign_001 .box_bottom_left, #boxdesign_001 .box_bottom_right{
+	background-image: url(graphic_elements/box/box_001_cr.png);
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	z-index: 3;
+}
+
+#boxdesign_001 .box_top_center, #boxdesign_001 .box_bottom_center{
+	background-image: url(graphic_elements/box/box_001_tb.png);
+	position: absolute;
+	width: 100%;
+	height: 20px;	
+	left: 0px;
+	z-index: 2;
+}
+
+#boxdesign_001 .box_middle_left, #boxdesign_001 .box_middle_right{
+	background-image: url(graphic_elements/box/box_001_ss.png);
+	position: absolute;
+	width: 20px;
+	height: 100%;
+	top: 0px;
+	z-index: 2;
+}
+
+#boxdesign_001 .box_content{
+	width: 100%
+	text-align: justify;
+	overflow: hidden;
+}
+
+.box_middle_left{
+	left: -20px;
+	background-position: left;
+}
+
+.box_middle_right{
+	right: -20px;
+	background-position: right;
+}
+
+.box_top_center{
+	top: -20px;
+	background-position: top;
+}
+
+.box_bottom_center{
+	bottom: -20px;
+	background-position: bottom;
+}
+
+.box_top_left {
+	left: -20px;
+	top: -20px;
+	background-position: left top;
+}
+.box_top_right {
+	right: -20px;
+	top: -20px;
+	background-position: right top;
+}
+.box_bottom_left {
+	left: -20px;
+	bottom: -20px;
+	background-position: left bottom;
+}
+.box_bottom_right {
+	right: -20px;
+	bottom: -20px;
+	background-position: right bottom;
+}
+
+.boxes{
+	margin-bottom: 0px;
+	padding: 20px;
+}
+
+.container_box_pieces{
+	padding: 0 10px;
+	margin: 0 0 20px;
+	position: relative;
+}
+
+/* ######## background options ########## */
+.background_pattern_001{
+	background-image: url(graphic_elements/pattern/pattern_001.png);
+}
+
+.background_pattern_002{
+	background-image: url(graphic_elements/pattern/pattern_002.png);
+}
+
+.shadow_001{
+	background-image: url(graphic_elements/shadow/shadow_001.png);
+	background-repeat: repeat no-repeat;
+}
